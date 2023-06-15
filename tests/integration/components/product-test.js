@@ -23,4 +23,11 @@ module('Integration | Component | item', function(hooks) {
 
     assert.equal(this.element.textContent.trim(), 'template block text');
   });
+
+  test('should correctly concat foo', function(assert) {
+    const productComponent = this.owner.lookup('component:product');
+    productComponent.zoom = false;
+
+    assert.equal(productComponent.computedFoo, false);
+  });
 });
