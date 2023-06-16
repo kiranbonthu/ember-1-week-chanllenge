@@ -11,29 +11,38 @@
       </li>
     </ol>
   </nav>
-  <hr>
+  <hr />
 
-  {{#each cart.cartList as |item|}}
+  {{#each this.cart.cartList as |item|}}
     <div class="cart-item d-flex align-items-center">
       <div class="cart-item-thumbnail">
-        <img src={{item.image}}>
+        <img attr="image" src={{item.image}} />
       </div>
       <div class="ml-3">
         <h4>{{item.name}}</h4>
         <div>
-          <del class="small text-black-50">{{currency item.price.original}}</del>
-          <i class="text-danger font-weight-bold">{{currency item.price.current}}</i>
+          <del class="small text-black-50">{{currency
+              item.price.original
+            }}</del>
+          <i class="text-danger font-weight-bold">{{currency
+              item.price.current
+            }}</i>
         </div>
       </div>
       <input
         type="number"
         class="ml-auto"
         value={{item.count}}
-        {{on "change" (fn this.changeItemCount item)}}>
-      <button class="ml-3" {{on "click" (fn this.removeItem item)}}>&times;</button>
+        {{on "change" (fn this.changeItemCount item)}}
+      />
+      <button
+        type="button"
+        class="ml-3"
+        {{on "click" (fn this.removeItem item)}}
+      >&times;</button>
     </div>
 
-    <hr>
+    <hr />
   {{/each}}
 
   <section class="w-50 ml-auto text-right mb-5">

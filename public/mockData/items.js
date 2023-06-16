@@ -5,6 +5,7 @@ export const Items = {
       name: "Smart Watch for Men Women",
       description:
         "Alexa Built-in, 1.7 Touch Screen Fitness Tracker with Heart Rate Sleep Tracking, 60 Sports Modes, 5ATM Waterproof Smartwatch for Android iPhone",
+      count:1,
       price: {
         original: 199.95,
         current: 99.98,
@@ -42,6 +43,7 @@ export const Items = {
       id: "2",
       name: "Casio Unisex",
       description: "F-108WH-1ACF Big Square Digital Display Quartz Black Watch",
+      count:1,
       price: {
         original: 22.95,
         current: 16.98,
@@ -76,6 +78,7 @@ export const Items = {
       name: "Apple Watch Series 8",
       description:
         "[GPS 45mm] Smart Watch w/Midnight Aluminum Case with Midnight Sport Band - M/L. Fitness Tracker, Blood Oxygen & ECG Apps, Always-On Retina Display, Water Resistant",
+      count:1,
       price: {
         original: 22.95,
         current: 16.98,
@@ -115,6 +118,7 @@ export const Items = {
       name: "Apple Watch SE ",
       description:
         "(2nd Gen) [GPS 40mm] Smart Watch w/Starlight Aluminum Case & Starlight Sport Band - S/M. Fitness & Sleep Tracker, Crash Detection, Heart Rate Monitor, Retina Display, Water Resistant",
+      count:1,
       price: {
         original: 22.95,
         current: 16.98,

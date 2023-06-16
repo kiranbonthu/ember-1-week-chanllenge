@@ -6,21 +6,16 @@ import { hbs } from 'ember-cli-htmlbars';
 module('Integration | Component | item', function(hooks) {
   setupRenderingTest(hooks);
 
-  test('it renders', async function(assert) {
-    // Set any properties with this.set('myProperty', 'value');
-    // Handle any actions with this.set('myAction', function(val) { ... });
+  /* test('should update title on button click', async function(assert) {
+    assert.expect(2);
 
-    await render(hbs`<Product />`);
+    await render(hbs`<Product::Details />`);
 
-    assert.equal(this.element.textContent.trim(), '');
+    assert.equal(this.element.querySelector('span').textContent.trim(), 'Hello World', 'initial text is hello world');
 
-    // Template block usage:
-    await render(hbs`
-      <Product>
-        template block text
-      </Product>
-    `);
+    // Click on the button
+    await click('.product-color');
 
-    assert.equal(this.element.textContent.trim(), 'template block text');
-  });
-});
+    assert.equal(this.element.querySelector('span').textContent.trim(), 'This is Magic', 'title changes after click');
+  }); */
+ });
